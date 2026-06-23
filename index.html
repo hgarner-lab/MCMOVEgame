@@ -3,17 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cross-Border Crossing</title>
+    <title>Cross-Border Crossing | Mastercard Move</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="branding.css" />
     <script src="game.js" defer></script>
   </head>
   <body>
     <div class="arcade-shell">
       <aside class="side-panel left-panel" aria-label="Game instructions">
         <div class="brand-block">
+          <div class="mc-lockup hero-lockup" aria-label="Mastercard Move">
+            <span class="mc-mark" aria-hidden="true">
+              <span class="mc-circle mc-red"></span>
+              <span class="mc-circle mc-yellow"></span>
+            </span>
+            <span class="mc-wordmark">
+              <span>mastercard</span>
+              <em>move</em>
+            </span>
+          </div>
           <p class="title-small">CROSS-BORDER</p>
           <h1>CROSSING</h1>
-          <p class="tagline">Move payments.<br />Power business.</p>
+          <p class="tagline">Move money.<br />Power business.</p>
         </div>
 
         <section class="panel-section">
@@ -21,7 +32,7 @@
           <ul class="how-list">
             <li><span class="legend-symbol move-symbol">+</span>Move payment packet to the top</li>
             <li><span class="legend-symbol avoid-symbol">X</span>Avoid friction</li>
-            <li><span class="legend-symbol rail-symbol">>>></span>Ride safe payment rails</li>
+            <li><span class="legend-symbol rail-symbol">>>></span>Ride trusted payment rails</li>
             <li><span class="legend-symbol ping-symbol"></span>Collect tracking pings</li>
             <li><span class="legend-symbol supplier-symbol">#</span>Reach Supplier Zone</li>
           </ul>
@@ -48,11 +59,23 @@
           </div>
         </section>
 
-        <p class="powered-by">Powered by B2B payment rails</p>
+        <p class="powered-by">Powered by <span>Mastercard Move</span> B2B payments</p>
       </aside>
 
       <main class="game-column">
         <header class="top-hud" aria-label="Game status">
+          <div class="hud-cell brand-cell">
+            <div class="mc-lockup mc-lockup-small" aria-label="Mastercard Move">
+              <span class="mc-mark mc-mark-small" aria-hidden="true">
+                <span class="mc-circle mc-red"></span>
+                <span class="mc-circle mc-yellow"></span>
+              </span>
+              <span class="mc-wordmark">
+                <span>mastercard</span>
+                <em>move</em>
+              </span>
+            </div>
+          </div>
           <div class="hud-cell level-cell">
             <span id="levelLabel">Level 1: Supplier Payment</span>
           </div>
@@ -88,8 +111,8 @@
             </div>
           </div>
           <div>
-            <h2>Rail Lanes</h2>
-            <p>Ride these safe routes</p>
+            <h2>Move Rails</h2>
+            <p>Ride trusted payment routes</p>
             <span class="rail-sample">>>  >>  >></span>
           </div>
           <div>
@@ -138,13 +161,14 @@
           <p id="recentEffect" class="event-effect"></p>
         </section>
 
-        <section class="status-section">
-          <h2>Business Signal</h2>
+        <section class="status-section mastercard-section">
+          <h2>Mastercard Move Signal</h2>
           <div class="signal-bars" aria-hidden="true">
             <span></span><span></span><span></span><span></span>
           </div>
           <p id="businessSignal">Route visibility awaiting start</p>
           <p class="exception-line">Exceptions: <strong id="exceptionText">0</strong></p>
+          <p class="brand-proof">Choice. Transparency. Control.</p>
         </section>
       </aside>
     </div>
