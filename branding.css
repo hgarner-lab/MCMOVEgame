@@ -63,34 +63,23 @@ body::before {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  opacity: 0.96;
   box-shadow: 0 0 15px currentColor;
 }
 
 .mc-red {
   left: 7px;
+  z-index: 1;
   color: var(--mc-red);
   background: var(--mc-red);
+  opacity: 0.98;
 }
 
 .mc-yellow {
   right: 7px;
+  z-index: 2;
   color: var(--mc-yellow);
   background: var(--mc-yellow);
-}
-
-.mc-mark::after {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  top: 4px;
-  left: 25px;
-  width: 10px;
-  height: 30px;
-  border-radius: 50%;
-  background: var(--mc-orange);
-  box-shadow: 0 0 12px rgba(255, 95, 0, 0.55);
-  pointer-events: none;
+  opacity: 0.9;
 }
 
 .mc-wordmark {
