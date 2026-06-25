@@ -1,9 +1,24 @@
 "use strict";
 
+function releaseInnerArcadeFit() {
+  document.body.classList.remove("fit-arcade");
+
+  const shell = document.querySelector(".cabinet-monitor .arcade-shell");
+  if (!shell) return;
+
+  shell.style.position = "static";
+  shell.style.left = "auto";
+  shell.style.top = "auto";
+  shell.style.transform = "none";
+  shell.style.transformOrigin = "center center";
+  shell.style.margin = "0";
+}
+
 function fitCabinetShell() {
   const cabinet = document.querySelector(".arcade-cabinet");
   if (!cabinet) return;
 
+  releaseInnerArcadeFit();
   document.body.classList.add("fit-cabinet");
   cabinet.style.transform = "none";
 
