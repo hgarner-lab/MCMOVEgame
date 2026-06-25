@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cross-Border Crossing | Mastercard Move</title>
+    <title>Cross-Border Crossing</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="branding.css" />
     <link rel="stylesheet" href="cabinet.css" />
@@ -11,51 +11,38 @@
     <script src="brand-interactions.js" defer></script>
     <script src="cabinet-fit.js" defer></script>
   </head>
-  <body>
-    <div class="arcade-cabinet" aria-label="Cross-Border Crossing arcade cabinet">
-      <header class="cabinet-marquee" aria-label="Cabinet marquee">
-        <div class="marquee-brand mc-lockup" aria-label="Mastercard Move">
-          <span class="mc-mark" aria-hidden="true">
+  <body class="cabinet-layout">
+    <div class="arcade-cabinet-stage">
+      <header class="cabinet-marquee" aria-label="Cross-Border Crossing arcade marquee">
+        <div class="brand-lockup brand-lockup-marquee" aria-label="Mastercard Move">
+          <span class="mc-symbol" aria-hidden="true">
             <span class="mc-circle mc-red"></span>
-            <span class="mc-circle mc-yellow"></span>
+            <span class="mc-circle mc-gold"></span>
           </span>
-          <span class="mc-wordmark">
-            <span>mastercard</span>
-            <em>move</em>
-          </span>
+          <span class="brand-wordmark"><span>Mastercard</span> <strong>Move</strong></span>
         </div>
         <div class="marquee-title">
           <span>CROSS-BORDER</span>
           <strong>CROSSING</strong>
         </div>
-        <p class="marquee-tagline">Modernise<br />global money<br />movement.</p>
+        <p class="marquee-message">Modernise global money movement.</p>
       </header>
 
-      <section class="cabinet-body" aria-label="Arcade screen enclosure">
+      <main class="cabinet-body">
         <aside class="cabinet-side-art side-art-left" aria-hidden="true">
-          <div class="side-globe"></div>
-          <p>Move<br />money.<br />Power<br />business.</p>
+          <div class="side-art-globe"></div>
+          <p>Move money.<br />Power business.</p>
         </aside>
 
-        <main class="cabinet-monitor" aria-label="CRT game monitor">
-          <div class="monitor-inner">
-            <div class="crt-glass">
+        <section class="cabinet-monitor" aria-label="Arcade monitor">
+          <div class="screen-bezel">
+            <div class="screen-content">
               <div class="arcade-shell">
                 <aside class="side-panel left-panel" aria-label="Game instructions">
                   <div class="brand-block">
-                    <div class="mc-lockup hero-lockup" aria-label="Mastercard Move">
-                      <span class="mc-mark" aria-hidden="true">
-                        <span class="mc-circle mc-red"></span>
-                        <span class="mc-circle mc-yellow"></span>
-                      </span>
-                      <span class="mc-wordmark">
-                        <span>mastercard</span>
-                        <em>move</em>
-                      </span>
-                    </div>
                     <p class="title-small">CROSS-BORDER</p>
                     <h1>CROSSING</h1>
-                    <p class="tagline">Modernise global<br />money movement.</p>
+                    <p class="tagline">Move payments.<br />Power business.</p>
                   </div>
 
                   <section class="panel-section">
@@ -63,7 +50,7 @@
                     <ul class="how-list">
                       <li><span class="legend-symbol move-symbol">+</span>Move payment packet to the top</li>
                       <li><span class="legend-symbol avoid-symbol">X</span>Avoid friction</li>
-                      <li><span class="legend-symbol rail-symbol">>>></span>Ride trusted payment rails</li>
+                      <li><span class="legend-symbol rail-symbol">>>></span>Ride safe payment rails</li>
                       <li><span class="legend-symbol ping-symbol"></span>Collect tracking pings</li>
                       <li><span class="legend-symbol supplier-symbol">#</span>Reach Supplier Zone</li>
                     </ul>
@@ -90,7 +77,7 @@
                     </div>
                   </section>
 
-                  <p class="powered-by">Powered by <span>Mastercard Move</span> B2B payments</p>
+                  <p class="powered-by">Powered by B2B payment rails</p>
                 </aside>
 
                 <main class="game-column">
@@ -130,8 +117,8 @@
                       </div>
                     </div>
                     <div>
-                      <h2>Move Rails</h2>
-                      <p>Ride trusted payment routes</p>
+                      <h2>Rail Lanes</h2>
+                      <p>Ride these safe routes</p>
                       <span class="rail-sample">>>  >>  >></span>
                     </div>
                     <div>
@@ -180,52 +167,63 @@
                     <p id="recentEffect" class="event-effect"></p>
                   </section>
 
-                  <section class="status-section mastercard-section">
-                    <h2>Mastercard Move Signal</h2>
+                  <section class="status-section">
+                    <h2>Business Signal</h2>
                     <div class="signal-bars" aria-hidden="true">
                       <span></span><span></span><span></span><span></span>
                     </div>
                     <p id="businessSignal">Route visibility awaiting start</p>
                     <p class="exception-line">Exceptions: <strong id="exceptionText">0</strong></p>
-                    <p class="brand-proof">Fast. Secure. Transparent.</p>
                   </section>
                 </aside>
               </div>
             </div>
           </div>
-        </main>
+        </section>
 
         <aside class="cabinet-side-art side-art-right" aria-hidden="true">
-          <div class="side-globe"></div>
-          <p>Modernise<br />global<br />money<br />movement.</p>
+          <div class="side-art-globe"></div>
+          <p>Modernise<br />global money<br />movement.</p>
         </aside>
-      </section>
+      </main>
 
       <footer class="control-deck" aria-label="Arcade controls">
-        <div class="joystick-block">
+        <div class="joystick-cluster" aria-hidden="true">
+          <span class="joystick-ball"></span>
           <span class="joystick-stick"></span>
-          <span class="joystick-label">Move</span>
+          <span class="joystick-base"></span>
+          <p>Move</p>
         </div>
         <div class="button-bank" aria-hidden="true">
-          <span class="cabinet-button button-red"></span>
-          <span class="cabinet-button button-red"></span>
-          <span class="cabinet-button button-orange"></span>
-          <span class="cabinet-button button-white"></span>
-        </div>
-        <div class="button-labels">
-          <span>Power-Up<br /><em>{SPACE}</em></span>
-          <span>Pause<br /><em>{P}</em></span>
-          <span>Restart<br /><em>{ENTER}</em></span>
+          <div class="deck-button-group">
+            <span class="deck-button deck-button-red"></span>
+            <p>Move</p>
+          </div>
+          <div class="deck-button-group">
+            <span class="deck-button deck-button-red"></span>
+            <p>Power-Up<br /><span>Space</span></p>
+          </div>
+          <div class="deck-button-group">
+            <span class="deck-button deck-button-orange"></span>
+            <p>Visibility</p>
+          </div>
+          <div class="deck-button-group">
+            <span class="deck-button deck-button-white"></span>
+            <p>Restart<br /><span>Enter</span></p>
+          </div>
         </div>
         <div class="controls-card">
           <h2>Controls</h2>
-          <p>↑ ↓ ← → or WASD to move</p>
-          <p>SPACE to use power-up</p>
-          <p>ENTER to start / restart</p>
+          <p>Arrow keys / WASD to move</p>
+          <p>Space to use power-up</p>
+          <p>Enter to start or restart</p>
+        </div>
+        <div class="cabinet-bottom-rail" aria-hidden="true">
+          <span class="brand-lockup brand-lockup-rail">
+            <span class="brand-wordmark"><span>Mastercard</span> <strong>Move</strong></span>
+          </span>
         </div>
       </footer>
-
-      <div class="cabinet-brand-rail">mastercard <span>move</span></div>
     </div>
   </body>
 </html>

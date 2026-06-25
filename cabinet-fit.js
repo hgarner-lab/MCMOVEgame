@@ -1,53 +1,22 @@
-"use strict";
+(function () {
+  "use strict";
 
-function releaseInnerArcadeFit() {
-  document.body.classList.remove("fit-arcade");
+  const STAGE_WIDTH = 1536;
+  const STAGE_HEIGHT = 1024;
+  const VIEWPORT_MARGIN = 20;
 
-  const shell = document.querySelector(".cabinet-monitor .arcade-shell");
-  if (!shell) return;
+  function fitCabinetStage() {
+    const widthScale = (window.innerWidth - VIEWPORT_MARGIN) / STAGE_WIDTH;
+    const heightScale = (window.innerHeight - VIEWPORT_MARGIN) / STAGE_HEIGHT;
+    const scale = Math.max(0.1, Math.min(1, widthScale, heightScale));
 
-  shell.style.position = "static";
-  shell.style.left = "auto";
-  shell.style.top = "auto";
-  shell.style.transform = "none";
-  shell.style.transformOrigin = "center center";
-  shell.style.margin = "0";
-}
+    document.documentElement.style.setProperty("--cabinet-scale", String(scale));
+    document.body.classList.add("cabinet-ready");
+    document.body.style.minHeight = "100vh";
+    document.body.style.overflow = "hidden";
+  }
 
-function fitCabinetShell() {
-  const cabinet = document.querySelector(".arcade-cabinet");
-  if (!cabinet) return;
-
-  releaseInnerArcadeFit();
-  document.body.classList.add("fit-cabinet");
-  cabinet.style.transform = "none";
-
-  const margin = 10;
-  const naturalWidth = cabinet.offsetWidth;
-  const naturalHeight = cabinet.offsetHeight;
-  const widthScale = (window.innerWidth - margin * 2) / naturalWidth;
-  const heightScale = (window.innerHeight - margin * 2) / naturalHeight;
-  const scale = Math.max(0.1, Math.min(1, widthScale, heightScale));
-  const fittedWidth = naturalWidth * scale;
-  const fittedHeight = naturalHeight * scale;
-
-  cabinet.style.left = `${Math.max(margin, (window.innerWidth - fittedWidth) / 2)}px`;
-  cabinet.style.top = `${Math.max(margin, (window.innerHeight - fittedHeight) / 2)}px`;
-  cabinet.style.transform = `scale(${scale})`;
-
-  document.body.style.minWidth = `${Math.ceil(fittedWidth + margin * 2)}px`;
-  document.body.style.minHeight = `${Math.ceil(fittedHeight + margin * 2)}px`;
-}
-
-function scheduleCabinetFit() {
-  fitCabinetShell();
-  requestAnimationFrame(fitCabinetShell);
-}
-
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", scheduleCabinetFit);
-} else {
-  scheduleCabinetFit();
-}
-
-window.addEventListener("resize", scheduleCabinetFit);
+  window.addEventListener("resize", fitCabinetStage);
+  window.addEventListener("orientationchange", fitCabinetStage);
+  fitCabinetStage();
+})();
