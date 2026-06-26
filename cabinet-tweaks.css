@@ -5,14 +5,14 @@
 }
 
 .arcade-cabinet-stage {
-  background: #03050a url("assets/cabinet-frame.svg") center / 100% 100% no-repeat;
+  background: #03050a url("assets/cabinet-frame-v2.webp?v=framefix3") center / 100% 100% no-repeat !important;
 }
 
 .cabinet-frame-art {
   position: absolute;
   inset: 0;
   z-index: 0;
-  display: block;
+  display: block !important;
   width: 100%;
   height: 100%;
   object-fit: fill;
