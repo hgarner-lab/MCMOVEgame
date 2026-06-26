@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="branding.css" />
     <link rel="stylesheet" href="cabinet.css" />
+    <link rel="stylesheet" href="cabinet-tweaks.css" />
     <script src="game.js" defer></script>
+    <script src="brand-interactions.js" defer></script>
     <script src="cabinet-fit.js" defer></script>
   </head>
   <body class="cabinet-layout">
@@ -187,9 +189,9 @@
           <span class="joystick-base"></span>
           <div class="arrow-key-diagram">
             <span class="arrow-key arrow-up">↑</span>
-            <span class="arrow-key">←</span>
-            <span class="arrow-key">↓</span>
-            <span class="arrow-key">→</span>
+            <span class="arrow-key arrow-left">←</span>
+            <span class="arrow-key arrow-down">↓</span>
+            <span class="arrow-key arrow-right">→</span>
           </div>
         </div>
         <div class="button-bank" aria-hidden="true">
@@ -205,11 +207,6 @@
         <div class="controls-card">
           <h2>Your Job</h2>
           <p>Your job is to get your payment successfully delivered across a border. Avoid risks and volatility. Use approved corridors.</p>
-        </div>
-        <div class="cabinet-bottom-rail" aria-hidden="true">
-            <span class="brand-lockup brand-lockup-rail">
-            <span class="brand-wordmark"><span>Mastercard</span> <strong>Move</strong></span>
-          </span>
         </div>
       </footer>
     </div>
