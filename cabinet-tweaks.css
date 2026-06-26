@@ -1,138 +1,41 @@
-/* Final arcade cabinet alignment pass */
+/* Cabinet image v2 integration pass */
+
+:root {
+  --screen-content-scale: 0.572;
+}
+
+.arcade-cabinet-stage {
+  background-image: url("assets/cabinet-frame-v2.webp");
+}
 
 .cabinet-marquee {
-  top: 52px;
+  left: 286px;
+  top: 56px;
+  width: 965px;
+  height: 122px;
 }
 
 .marquee-title {
-  transform: translateY(6px);
+  transform: translateY(4px);
 }
 
 .marquee-message,
 .brand-mark {
-  transform: translateY(3px);
+  transform: translateY(2px);
 }
 
-.button-bank {
-  left: 590px;
-  top: 896px;
-  width: 286px;
-  height: 44px;
+.screen-content {
+  left: 377px;
+  top: 254px;
+  width: 784px;
+  height: 472px;
+  border-radius: 24px;
 }
 
-.button-bank::before {
-  display: none !important;
-}
-
-.button-bank .deck-button {
-  display: none !important;
-}
-
-.deck-button-group {
-  width: 124px;
-  height: auto;
-  align-content: center;
-  gap: 0;
-}
-
-.deck-button-group:nth-child(1) {
-  left: 0;
-}
-
-.deck-button-group:nth-child(2) {
-  left: 146px;
-}
-
-.deck-button-group p {
-  color: #f7efe8;
-  font-size: 12.6px;
-  line-height: 1.08;
-  letter-spacing: 1px;
-  text-shadow:
-    0 1px 0 rgba(0, 0, 0, 0.95),
-    0 0 5px rgba(255, 142, 40, 0.24);
-}
-
-.deck-button-group p span {
-  color: #ffcf8a;
-  font-size: 11.3px;
-  letter-spacing: 1px;
-}
-
-.joystick-cluster {
-  left: 282px;
-  top: 848px;
-  width: 92px;
-  height: 56px;
-}
-
-.arrow-key-diagram {
-  left: 0;
-  top: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 27px);
-  grid-template-rows: repeat(2, 25px);
-  gap: 4px;
-  width: auto;
-}
-
-.arrow-key {
-  width: 27px;
-  height: 25px;
-  border: 1px solid rgba(255, 195, 77, 0.86);
-  border-radius: 4px;
-  color: #f7efe8;
-  background:
-    linear-gradient(180deg, rgba(46, 46, 51, 0.94), rgba(7, 7, 9, 0.95));
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.18),
-    inset 0 -2px 4px rgba(0, 0, 0, 0.54),
-    0 2px 0 rgba(0, 0, 0, 0.8),
-    0 0 7px rgba(255, 124, 24, 0.16);
-  font-size: 14px;
-}
-
-.arrow-key.arrow-up {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.arrow-key.arrow-left {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.arrow-key.arrow-down {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.arrow-key.arrow-right {
-  grid-column: 3;
-  grid-row: 2;
-}
-
-.controls-card {
-  left: 1012px;
-  top: 819px;
-  width: 252px;
-  min-height: 88px;
-  padding: 8px 14px;
-}
-
-.controls-card h2 {
-  margin: 0 0 6px;
-  font-size: 13.8px;
-  letter-spacing: 0.9px;
-}
-
-.controls-card p {
-  font-size: 10.7px;
-  line-height: 1.2;
-  max-width: 244px;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.92);
-}
-
+.control-deck,
+.joystick-cluster,
+.button-bank,
+.controls-card,
 .cabinet-bottom-rail,
 .brand-lockup-rail {
   display: none !important;
