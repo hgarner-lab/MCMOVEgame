@@ -1,8 +1,8 @@
 :root{--screen-content-scale:.572}
-.arcade-cabinet-stage{background:#03050a url("assets/cabinet-frame-v2.svg?v=svg1") center/100% 100% no-repeat}
-.cabinet-frame-art{position:absolute;inset:0;z-index:0;display:block;width:100%;height:100%;object-fit:fill;pointer-events:none;user-select:none}
+.arcade-cabinet-stage{background:#03050a url("assets/cabinet-frame-v2-photo.jpg?v=photo1") center/100% 100% no-repeat!important}
+.cabinet-frame-art{display:none!important}
 .cabinet-marquee{left:286px;top:56px;z-index:6;width:965px;height:122px}
 .marquee-title{transform:translateY(4px)}
 .marquee-message,.brand-mark{transform:translateY(2px)}
 .screen-content{left:377px;top:254px;z-index:4;width:784px;height:472px;border-radius:24px}
-.control-deck,.joystick-cluster,.button-bank,.controls-card,.cabinet-bottom-rail,.brand-lockup-rail{display:none}
+.control-deck,.joystick-cluster,.button-bank,.controls-card,.cabinet-bottom-rail,.brand-lockup-rail{display:none!important}
