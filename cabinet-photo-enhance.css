@@ -4,22 +4,10 @@
   inset: 0;
   z-index: 1;
   display: block;
-  background-image: url("https://raw.githubusercontent.com/hgarner-lab/MCMOVEgame/main/assets/cabinet-frame-v2.webp?v=photo-enhance1");
-  background-position: center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background: url("https://cdn.jsdelivr.net/gh/hgarner-lab/MCMOVEgame@main/assets/cabinet-frame-v2.webp") center / 100% 100% no-repeat;
   pointer-events: none;
 }
 
-.cabinet-body {
-  position: relative;
-  z-index: 3;
-}
-
-.cabinet-marquee {
-  z-index: 6;
-}
-
-.screen-content {
-  z-index: 4;
-}
+.cabinet-body { position: relative; z-index: 3; }
+.cabinet-marquee { z-index: 6; }
+.screen-content { z-index: 4; }
