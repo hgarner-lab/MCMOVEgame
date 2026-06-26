@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" role="img" aria-label="Retro arcade cabinet frame">
+  <defs>
+    <linearGradient id="metal" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#26201d"/>
+      <stop offset="0.45" stop-color="#0e0e10"/>
+      <stop offset="1" stop-color="#030304"/>
+    </linearGradient>
+    <linearGradient id="deck" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#2b241f"/>
+      <stop offset="0.58" stop-color="#151312"/>
+      <stop offset="1" stop-color="#080707"/>
+    </linearGradient>
+    <radialGradient id="buttonRed" cx="35%" cy="25%" r="70%">
+      <stop offset="0" stop-color="#ff9c87"/>
+      <stop offset="0.32" stop-color="#ff2c1f"/>
+      <stop offset="1" stop-color="#6f0805"/>
+    </radialGradient>
+    <radialGradient id="buttonWhite" cx="35%" cy="25%" r="70%">
+      <stop offset="0" stop-color="#fff8ef"/>
+      <stop offset="0.48" stop-color="#e7ded4"/>
+      <stop offset="1" stop-color="#756b62"/>
+    </radialGradient>
+    <radialGradient id="stick" cx="35%" cy="25%" r="68%">
+      <stop offset="0" stop-color="#ff9080"/>
+      <stop offset="0.42" stop-color="#d91810"/>
+      <stop offset="1" stop-color="#610300"/>
+    </radialGradient>
+    <filter id="orangeGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000" flood-opacity="0.78"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="6"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.08"/>
+      </feComponentTransfer>
+      <feBlend mode="screen" in2="SourceGraphic"/>
+    </filter>
+    <pattern id="scratch" width="84" height="84" patternUnits="userSpaceOnUse" patternTransform="rotate(-18)">
+      <path d="M4 11h38M15 44h58M6 71h30" stroke="#ff8a1f" stroke-opacity="0.08" stroke-width="1"/>
+      <path d="M50 21h16M32 61h40" stroke="#fff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+    <pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.15" fill="#ff7a18" opacity="0.65"/>
+    </pattern>
+    <style>
+      .label{font-family:'Courier New',monospace;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
+      .small{font-family:'Courier New',monospace;font-weight:700;letter-spacing:.8px;text-transform:uppercase}
+      .copy{font-family:Arial,Helvetica,sans-serif;font-weight:700}
+    </style>
+  </defs>
+
+  <rect width="1536" height="1024" fill="#03050a"/>
+  <path d="M0 1024V0h1536v1024z" fill="url(#metal)" opacity="0.08"/>
+  <path d="M0 1024h1536V760c-160 58-338 84-536 78-386-13-719-5-1000 58z" fill="#050403" opacity="0.78"/>
+
+  <g filter="url(#softShadow)">
+    <path d="M210 18h1116c34 0 52 18 56 52l25 186 70 168 10 304-56 246H106l-56-246 10-304 70-168 25-186c4-34 22-52 55-52z" fill="url(#metal)"/>
+    <path d="M210 18h1116c34 0 52 18 56 52l25 186 70 168 10 304-56 246H106l-56-246 10-304 70-168 25-186c4-34 22-52 55-52z" fill="url(#scratch)" opacity="0.95"/>
+  </g>
+
+  <path d="M171 34c-27 58-25 149 5 204 24 43 8 101-30 150-54 69-54 189-22 265 20 47-18 103-44 152-22 42-28 99-3 151" fill="none" stroke="#ff7a18" stroke-width="7" stroke-linecap="round" filter="url(#orangeGlow)" opacity="0.95"/>
+  <path d="M1365 34c27 58 25 149-5 204-24 43-8 101 30 150 54 69 54 189 22 265-20 47 18 103 44 152 22 42 28 99 3 151" fill="none" stroke="#ff7a18" stroke-width="7" stroke-linecap="round" filter="url(#orangeGlow)" opacity="0.95"/>
+
+  <g>
+    <rect x="224" y="42" width="1088" height="150" rx="18" fill="#070707" stroke="#3d3128" stroke-width="8"/>
+    <rect x="246" y="62" width="1044" height="110" rx="12" fill="#151211" stroke="#ff7a18" stroke-width="2.5"/>
+    <rect x="258" y="75" width="1020" height="84" rx="8" fill="#100f0e" stroke="#8b4314" stroke-width="1.2" opacity="0.9"/>
+  </g>
+
+  <g>
+    <path d="M312 222h912c28 0 50 22 50 50v471c0 28-22 50-50 50H312c-28 0-50-22-50-50V272c0-28 22-50 50-50z" fill="#090909" stroke="#2d2925" stroke-width="12"/>
+    <path d="M363 254h810c18 0 33 15 33 33v410c0 18-15 33-33 33H363c-18 0-33-15-33-33V287c0-18 15-33 33-33z" fill="#000" stroke="#54524e" stroke-width="2"/>
+    <path d="M365 256h806c18 0 32 14 32 32v408c0 18-14 32-32 32H365c-18 0-32-14-32-32V288c0-18 14-32 32-32z" fill="#020509" opacity="0.88"/>
+  </g>
+
+  <g opacity="0.92">
+    <rect x="176" y="246" width="120" height="500" rx="8" fill="#11100f" stroke="#3b2b21" stroke-width="3"/>
+    <rect x="195" y="352" width="72" height="220" fill="url(#dots)" opacity="0.7"/>
+    <path d="M184 310c58 32 93 81 108 148M184 651c58-32 93-81 108-148M196 290c56 63 84 132 84 207M196 668c56-63 84-132 84-207" fill="none" stroke="#ff7a18" stroke-opacity="0.32" stroke-width="1.5"/>
+    <circle cx="213" cy="253" r="6" fill="#060606" stroke="#6b5141" stroke-width="3"/>
+    <circle cx="263" cy="736" r="6" fill="#060606" stroke="#6b5141" stroke-width="3"/>
+  </g>
+  <g opacity="0.92">
+    <rect x="1240" y="246" width="120" height="500" rx="8" fill="#11100f" stroke="#3b2b21" stroke-width="3"/>
+    <rect x="1268" y="352" width="72" height="220" fill="url(#dots)" opacity="0.7"/>
+    <path d="M1352 310c-58 32-93 81-108 148M1352 651c-58-32-93-81-108-148M1340 290c-56 63-84 132-84 207M1340 668c-56-63-84-132-84-207" fill="none" stroke="#ff7a18" stroke-opacity="0.32" stroke-width="1.5"/>
+    <circle cx="1323" cy="253" r="6" fill="#060606" stroke="#6b5141" stroke-width="3"/>
+    <circle cx="1273" cy="736" r="6" fill="#060606" stroke="#6b5141" stroke-width="3"/>
+  </g>
+
+  <g>
+    <path d="M150 756h1236l72 190H78z" fill="url(#deck)" stroke="#2b211c" stroke-width="7"/>
+    <path d="M169 777h1198l52 144H116z" fill="none" stroke="#ff7a18" stroke-width="2" opacity="0.75"/>
+    <path d="M150 756h1236l72 190H78z" fill="url(#scratch)" opacity="0.8"/>
+  </g>
+
+  <g transform="translate(176 779)">
+    <path d="M0 15c0-8 7-15 15-15h304c9 0 16 7 16 15v139c0 9-7 16-16 16H15c-8 0-15-7-15-16z" fill="#12100f" stroke="#1f1b19" stroke-width="8"/>
+    <rect x="11" y="11" width="313" height="148" rx="10" fill="#151210" stroke="#ff7a18" stroke-width="2"/>
+    <rect x="24" y="24" width="287" height="122" rx="4" fill="#0e0d0c" stroke="#6f3814" stroke-width="1"/>
+    <circle cx="22" cy="22" r="7" fill="#060606" stroke="#9a7158" stroke-width="3"/>
+    <circle cx="313" cy="22" r="7" fill="#060606" stroke="#9a7158" stroke-width="3"/>
+    <circle cx="22" cy="149" r="7" fill="#060606" stroke="#9a7158" stroke-width="3"/>
+    <circle cx="313" cy="149" r="7" fill="#060606" stroke="#9a7158" stroke-width="3"/>
+    <text class="label" x="167" y="39" text-anchor="middle" fill="#ff8a1f" font-size="25">How To Play</text>
+    <line x1="64" y1="50" x2="270" y2="50" stroke="#ff7a18" stroke-opacity="0.55"/>
+    <text class="label" x="58" y="86" text-anchor="middle" fill="#19d8ff" font-size="44" filter="url(#orangeGlow)">+</text>
+    <text class="small" x="101" y="75" fill="#f3eee5" font-size="16">Move payment packet</text>
+    <text class="small" x="101" y="95" fill="#f3eee5" font-size="16">to the top</text>
+    <line x1="68" y1="109" x2="281" y2="109" stroke="#ff7a18" stroke-opacity="0.35"/>
+    <text class="label" x="58" y="135" text-anchor="middle" fill="#ff3328" font-size="36">X</text>
+    <text class="small" x="101" y="133" fill="#f3eee5" font-size="16">Avoid friction</text>
+  </g>
+
+  <g transform="translate(510 772)">
+    <ellipse cx="69" cy="103" rx="62" ry="20" fill="#050505" stroke="#4b4038" stroke-width="4"/>
+    <rect x="57" y="28" width="24" height="76" rx="10" fill="#0b0b0b" stroke="#26221f" stroke-width="3"/>
+    <circle cx="69" cy="31" r="36" fill="url(#stick)" stroke="#71100d" stroke-width="5"/>
+    <ellipse cx="57" cy="18" rx="18" ry="9" fill="#ff9d8e" opacity="0.45"/>
+    <g transform="translate(4 126)">
+      <rect x="42" y="0" width="32" height="28" rx="5" fill="#171719" stroke="#ffc45c" stroke-width="1.4"/>
+      <rect x="0" y="36" width="32" height="28" rx="5" fill="#171719" stroke="#ffc45c" stroke-width="1.4"/>
+      <rect x="42" y="36" width="32" height="28" rx="5" fill="#171719" stroke="#ffc45c" stroke-width="1.4"/>
+      <rect x="84" y="36" width="32" height="28" rx="5" fill="#171719" stroke="#ffc45c" stroke-width="1.4"/>
+      <text x="58" y="21" text-anchor="middle" fill="#f7efe8" font-size="22">↑</text>
+      <text x="16" y="57" text-anchor="middle" fill="#f7efe8" font-size="22">←</text>
+      <text x="58" y="57" text-anchor="middle" fill="#f7efe8" font-size="22">↓</text>
+      <text x="100" y="57" text-anchor="middle" fill="#f7efe8" font-size="22">→</text>
+    </g>
+  </g>
+
+  <g transform="translate(735 806)">
+    <ellipse cx="35" cy="51" rx="39" ry="13" fill="#020202" opacity="0.85"/>
+    <circle cx="35" cy="32" r="34" fill="url(#buttonRed)" stroke="#140606" stroke-width="5"/>
+    <ellipse cx="25" cy="18" rx="15" ry="7" fill="#ff9d8e" opacity="0.45"/>
+    <text class="small" x="35" y="100" text-anchor="middle" fill="#f7efe8" font-size="17">Power-Up</text>
+    <text class="small" x="35" y="120" text-anchor="middle" fill="#ffc45c" font-size="15">Space</text>
+  </g>
+  <g transform="translate(868 806)">
+    <ellipse cx="35" cy="51" rx="39" ry="13" fill="#020202" opacity="0.85"/>
+    <circle cx="35" cy="32" r="34" fill="url(#buttonWhite)" stroke="#140606" stroke-width="5"/>
+    <ellipse cx="25" cy="18" rx="15" ry="7" fill="#ffffff" opacity="0.55"/>
+    <text class="small" x="35" y="100" text-anchor="middle" fill="#f7efe8" font-size="17">Restart</text>
+    <text class="small" x="35" y="120" text-anchor="middle" fill="#ffc45c" font-size="15">Enter</text>
+  </g>
+
+  <g transform="translate(1004 779)">
+    <path d="M0 15c0-8 7-15 15-15h338c9 0 16 7 16 15v139c0 9-7 16-16 16H15c-8 0-15-7-15-16z" fill="#12100f" stroke="#1f1b19" stroke-width="8"/>
+    <rect x="11" y="11" width="347" height="148" rx="10" fill="#151210" stroke="#ff7a18" stroke-width="2"/>
+    <rect x="24" y="24" width="321" height="122" rx="4" fill="#0e0d0c" stroke="#6f3814" stroke-width="1"/>
+    <circle cx="22" cy="22" r="7" fill="#060606" stroke="#9a7158" stroke-width="3"/>
+    <circle cx="347" cy="22" r="7" fill="#060606" stroke="#9a7158" stroke-width="3"/>
+    <circle cx="22" cy="149" r="7" fill="#060606" stroke="#9a7158" stroke-width="3"/>
+    <circle cx="347" cy="149" r="7" fill="#060606" stroke="#9a7158" stroke-width="3"/>
+    <text class="label" x="184" y="49" text-anchor="middle" fill="#ff8a1f" font-size="29">Your Job</text>
+    <line x1="93" y1="65" x2="162" y2="65" stroke="#ff7a18" stroke-opacity="0.55"/>
+    <circle cx="184" cy="65" r="3" fill="#ff7a18" opacity="0.65"/>
+    <line x1="206" y1="65" x2="275" y2="65" stroke="#ff7a18" stroke-opacity="0.55"/>
+    <text class="small" x="184" y="94" text-anchor="middle" fill="#f3eee5" font-size="17">Deliver your payment</text>
+    <text class="small" x="184" y="116" text-anchor="middle" fill="#f3eee5" font-size="17">across a border.</text>
+    <line x1="83" y1="130" x2="285" y2="130" stroke="#ff7a18" stroke-opacity="0.35"/>
+    <text class="small" x="184" y="154" text-anchor="middle" fill="#f3eee5" font-size="17">Avoid risks. Use approved corridors.</text>
+  </g>
+
+  <rect width="1536" height="1024" fill="url(#scratch)" opacity="0.35"/>
+  <rect x="0" y="0" width="1536" height="1024" fill="none" stroke="#000" stroke-width="16"/>
+</svg>
