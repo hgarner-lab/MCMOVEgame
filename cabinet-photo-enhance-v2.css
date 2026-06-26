@@ -1,0 +1,22 @@
+.arcade-cabinet-stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: block;
+  background: url("assets/cabinet-frame-v2-1536-q75.jpg?v=hires-local1") center / 100% 100% no-repeat;
+  pointer-events: none;
+}
+
+.cabinet-body {
+  position: relative;
+  z-index: 3;
+}
+
+.cabinet-marquee {
+  z-index: 6;
+}
+
+.screen-content {
+  z-index: 4;
+}
